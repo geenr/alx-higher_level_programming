@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 -c "$PYCODE" #we are giving python3 specific command using the -c stored in the $PYTHON variable
