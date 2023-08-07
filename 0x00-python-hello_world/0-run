@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 "$PYFILE"
+python3 "$PYFILE" #we have given the variable PYFILE a value of python3 so everytime we call PYFILE we call python3
