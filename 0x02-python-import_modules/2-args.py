@@ -11,4 +11,4 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(no_of_argvss))
     for c in range(no_of_argvss):
-        print("{}: {}".format(no_of_argvss, c))
+        print("{}: {}".format(c + 1, sys.argv[c + 1]))
