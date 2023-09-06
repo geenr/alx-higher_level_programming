@@ -33,3 +33,15 @@ mee:
 >>> text_indentation(""mee:"")
 Traceback (most recent call last):
 SyntaxError: invalid syntax
+
+>>> text_indentation("my name is kim, i love meet,")
+my name is kim, i love meet,
+
+>>> text_indentation("josh: ")
+josh:
+<BLANKLINE>
+<BLANKLINE>
+
+>>> text_indentation(" josh:")
+ josh:
+<BLANKLINE>
