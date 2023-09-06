@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Defining a function that prints 2 new lines after a character '.' '?' and ':'."""
+
+
 def text_indentation(text):
     """
     Prints 2 new line after character '.' '?' and ':'.
