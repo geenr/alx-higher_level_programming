@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Declaring a function that returns true if object is inherited."""
+
+
 def inherits_from(obj, a_class):
     """
     Return true if object is inherited.
