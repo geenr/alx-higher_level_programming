@@ -9,4 +9,4 @@ def class_to_json(obj):
     Args:
         obj: Is an instance of a class.
     """
-    return
+    return (obj.__dict__)
