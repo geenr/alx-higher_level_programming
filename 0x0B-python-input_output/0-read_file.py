@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Declaring a function that reads a txt file."""
+
+
 def read_file(filename=""):
     """
     Reads a txt file.
