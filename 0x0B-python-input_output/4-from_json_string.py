@@ -10,4 +10,4 @@ def from_json_string(my_str):
     Args:
         my_str: String being tested.
     """
-    return (json.dumps(my_str))
+    return (json.loads(my_str))
