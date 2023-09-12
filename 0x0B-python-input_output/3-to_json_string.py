@@ -8,6 +8,6 @@ def to_json_string(my_obj):
     Returns an object represented by a json string.
 
     Args:
-        my_str: The string being tested.
+        my_obj: The string being tested.
     """
     return (json.dumps(my_obj))
