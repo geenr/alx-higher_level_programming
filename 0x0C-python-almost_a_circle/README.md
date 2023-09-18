@@ -7,3 +7,5 @@ class file_name(unittest.Testcase):
 *args vs **kwargs
 *args is used to send a non-keyworded variable length argument list to the function
 **kwargs allows you to pass keyworded variable length of arguments to a function
+json.loads - decodes
+json.dumps - encodes - turns it into a string
