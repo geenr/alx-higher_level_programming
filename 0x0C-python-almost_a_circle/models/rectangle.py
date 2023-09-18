@@ -104,3 +104,49 @@ class Rectangle(Base):
         """Updates and returns the class in a string method."""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height))
+
+    def update(self, *args, **kwargs):
+        """Update the attributes of the class.
+
+        Args:
+            *args (ints): New values of the attribute.
+                - 1st argument should be id attribute
+                - 2nd argument should be width attribute
+                - 3rd argument should be height attribute
+                - 4th argument should be x attribute
+                - 5th argument should be y attribute
+            **kwargs (dict): New value pairs of attributes.
+        """
+        if args and len(args) != 0:
+            f = 0
+            for arg in args:
+                if f == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif f == 1:
+                    self.width = arg
+                elif f == 2:
+                    self.height = arg
+                elif f == 3:
+                    self.x = arg
+                elif f == 4:
+                    self.y = arg
+                f += 1
+
+        elif kwargs and len(kwargs) != 0:
+            for i, v in kwargs.items():
+                if i == "id":
+                    if v is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = v
+                elif i == "width":
+                    self.width = v
+                elif i == "height":
+                    self.height = v
+                elif i == "x":
+                    self.x = v
+                elif i == "y":
+                    self.y = v
