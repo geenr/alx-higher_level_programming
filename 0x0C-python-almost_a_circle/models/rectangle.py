@@ -99,3 +99,8 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for b in range(self.width)]
             print("")
+
+    def __str__(self):
+        """Updates and returns the class in a string method."""
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height))
